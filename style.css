@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(68, 109, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.calculator{
+    padding: 10px;
+    background-color: rgb(59, 117, 167);
+    border-radius: 20px;
+    
+}
+
+form div input{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(41, 47, 73),-2px -1px 5px rgb(63, 72, 112) ;
+    text-align: center;
+    cursor: pointer;
+    color:#f31616;
+}
+.display{
+    width: 100%;
+    height: 50px;
+    padding-right: 7px;
+    text-align: right;
+    color: #ffff;
+    border-radius: 10px;
+    background-color: rgb(59, 117, 167);
+    box-shadow: 2px 2px 5px rgb(41, 47, 73),-2px -2px 5px rgb(63, 72, 112) ;
+}
+.display::placeholder{
+    color:rgb(72, 69, 69);
+}
+.display:active{
+    background-color:rgb(59, 117, 167) ;
+}
+.operator{
+    background-color:rgba(42, 44, 30, 0.892);
+    ;
+    color: #f1e435;
+}
+form div input:active{
+    background-color: rgb(62, 55, 55);
+}
+.equal{
+    width: 90px;
+    border-radius: 20px;
+    background-color: #f1e435;
+    color: #f31616
+
+}
+
+@media only screen and (max-width:375px){
+    body{
+        max-width: 90%;
+        margin: auto;
+    }
+}
